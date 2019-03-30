@@ -1,0 +1,35 @@
+version: '3'
+
+networks:
+  interview:
+
+services:
+  my-app:
+    build: php-fpm
+    networks: 
+       - interview
+    #links:
+      #- db
+    volumes:
+      - /Applications/MAMP/htdocs/zhihu:/var/www/html  
+
+  nginx:
+    build: nginx
+    networks: 
+      - interview
+    ports:
+      - "80:80"
+    volumes:
+      - /Applications/MAMP/htdocs/zhihu:/var/www/html   
+ 
+  db:
+    image: "mysql:5.7.15"
+    networks:
+      - interview
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: zhihu
+    volumes:
+      - $PWD/data:/var/lib/mysql
+
+
