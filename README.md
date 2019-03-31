@@ -355,7 +355,7 @@ services:
 ``` 
 
 
-## docker-compose常用命令
+## 启动并使用docker-compose
 - 进入docker-compose.yml文件所在的文件夹 `cd project`
 - 创建并启动所有容器 `docker-compose up -d` -d是指在后台运行 (如果容器配置有所变动，在此之前先执行 `dcoker-compose build`)
 - 进入容器 `docker-compose exec $serivce_name bash` 其中 `$service_name` 是你docker-compose.yml文件中定义的services名称，并不是 `docker-compose ps` 查看到的名称。
