@@ -1,7 +1,6 @@
 # Docker 搭建 Nginx + php-fpm + mysql
 >Author：邹智
->PS: 我自己的所有配置文件可以去我的 [Github](https://github.com/jacks121/docker) 中Clone。
->全文中有4处粗体，是我自己踩过的坑。希望对大家有帮助。
+>PS: 全文中有4处粗体，是我自己踩过的坑。希望对大家有帮助。
 
 ## 创建目录
 
