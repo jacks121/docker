@@ -1,5 +1,6 @@
 # Docker 搭建 Nginx + php-fpm + mysql
 >Author：邹智
+
 >PS: 全文中有4处粗体，是我自己踩过的坑。希望对大家有帮助。
 
 ## 创建目录
